@@ -123,16 +123,7 @@ This isn't possible right now because [heldr/datauri](https://github.com/heldr/d
 
 ## Anything missing?
 
-Create an [issue](https://github.com/adam-lynch/gulp-image-data-uri/issues) / [pull-request](https://github.com/adam-lynch/gulp-image-data-uri/pulls) :smiley:.
+Create an [issue](https://github.com/undercloud/gulp-image-inline/issues) / [pull-request](https://github.com/undercloud/gulp-image-inline/pulls) :smiley:.
 
-[npm-url]: https://npmjs.org/package/gulp-image-data-uri
-[npm-image]: http://img.shields.io/npm/v/gulp-image-data-uri.svg?style=flat
+[npm-url]: https://npmjs.org/package/gulp-image-inline
 
-[travis-url]: http://travis-ci.org/adam-lynch/gulp-image-data-uri
-[travis-image]: http://img.shields.io/travis/adam-lynch/gulp-image-data-uri.svg?style=flat
-
-[appveyor-url]: https://ci.appveyor.com/project/adam-lynch/gulp-image-data-uri/branch/master
-[appveyor-image]: https://ci.appveyor.com/api/projects/status/f34nrrstjmctvuj0/branch/master?svg=true
-
-[depstat-url]: https://david-dm.org/adam-lynch/gulp-image-data-uri
-[depstat-image]: https://david-dm.org/adam-lynch/gulp-image-data-uri.svg?style=flat
