@@ -1,4 +1,4 @@
-gulp-image-inline-uri
+gulp-image-inline
 ==========
 
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Windows Build Status][appveyor-image]][appveyor-url] [![Dependency Status][depstat-image]][depstat-url] 
