@@ -2,8 +2,9 @@ through = require 'through2'
 path = require 'path'
 DataURI = require 'datauri'
 gutil = require 'gulp-util'
+imgsize = require 'image-size'
 PluginError = gutil.PluginError
-pluginName = 'gulp-image-data-uri'
+pluginName = 'gulp-image-inline'
 
 module.exports = (options) ->
 
@@ -26,8 +27,17 @@ module.exports = (options) ->
         basename = path.basename file.path, path.extname file.path
         className = basename
         className = options.customClass className, file if options.customClass?
-
-        file.contents = new Buffer dataURI.getCss className
+        
+        style = dataURI.getCss className
+        
+        if options.dimension != null && options.dimension === true
+            dimension = imgsize file.contents
+            style = style.slice 0,-1
+            style += '    width: ' + dimension.width + 'px;\n'
+            style += '    height: ' + dimension.height + 'px;\n'
+            style += '}';
+            
+        file.contents = new Buffer style
         file.path = path.join path.dirname(file.path), basename + '.css'
         this.push file
 
