@@ -1,7 +1,6 @@
 gulp-image-inline
 ==========
 
-[![NPM version][npm-image]][npm-url]
 ---
 
 A [Gulp](http://github.com/gulpjs/gulp) plugin for converting images to inline data-URIs. Intended to be a simple single-purpose wrapper for [heldr/datauri](https://github.com/heldr/datauri).
