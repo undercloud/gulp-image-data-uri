@@ -30,7 +30,7 @@ module.exports = (options) ->
         
         style = dataURI.getCss className
         
-        if options.dimension != null && options.dimension === true
+        if options.dimension != null && options.dimension == true
             dimension = imgsize file.contents
             style = style.slice 0,-1
             style += '    width: ' + dimension.width + 'px;\n'
