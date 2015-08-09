@@ -31,6 +31,16 @@ An optional function. If omitted, the class added is just the file's basename.
 
 The function is called with two arguments; the default class name and the [Vinyl](http://github.com/wearefractal/vinyl) file object. It must *return* the new class (string). See [Examples](#examples) for more information.
 
+### dimension
+If flag equal ```true```, ```width``` and ```height``` will be injected into class;
+```CSS
+.icon {
+    width: 32px;
+    height: 32px;
+    background-image: url(...);
+}
+
+```
 
 # Contributing
 
