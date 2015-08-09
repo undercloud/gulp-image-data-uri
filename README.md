@@ -9,13 +9,13 @@ A [Gulp](http://github.com/gulpjs/gulp) plugin for converting images to inline d
 
 # Installation
 ```js
-npm install gulp-image-inline-uri
+npm install gulp-image-inline
 ```
 
 # Usage
 ```js
 var gulp = require('gulp');
-var imageDataURI = require('gulp-image-inline-uri');
+var imageDataURI = require('gulp-image-inline');
 
 gulp.task('prepare', function() {
     gulp.src('./images/*')
@@ -54,7 +54,7 @@ Use [gulp-concat](https://github.com/wearefractal/gulp-concat);
 
 ```javascript   
 var gulp = require('gulp');
-var imageDataURI = require('gulp-image-inline-uri');
+var imageDataURI = require('gulp-image-inline');
 var concat = require('concat');
 
 gulp.task('prepare', function() {
@@ -71,7 +71,7 @@ gulp.task('default', ['prepare']);
 
 ```javascript   
 var gulp = require('gulp');
-var imageDataURI = require('gulp-image-inline-uri');
+var imageDataURI = require('gulp-image-inline');
 var path = require('path');
 
 gulp.task('prepare', function() {
@@ -100,7 +100,7 @@ Use [gulp-filter](https://github.com/sindresorhus/gulp-filter);
 
 ```javascript   
 var gulp = require('gulp');
-var imageDataURI = require('gulp-image-inline-uri');
+var imageDataURI = require('gulp-image-inline');
 var filter = require('gulp-filter');
 
 gulp.task('prepare', function() {
