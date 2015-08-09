@@ -33,9 +33,9 @@ module.exports = (options) ->
         if options.dimension != null && options.dimension === true
             dimension = imgsize file.contents
             style = style.slice 0,-1
-            style = style + '    width: ' + dimension.width + 'px;\n'
-            style = style + '    height: ' + dimension.height + 'px;\n'
-            style = style + '}';
+            style += '    width: ' + dimension.width + 'px;\n'
+            style += '    height: ' + dimension.height + 'px;\n'
+            style += '}';
             
         file.contents = new Buffer style
         file.path = path.join path.dirname(file.path), basename + '.css'
